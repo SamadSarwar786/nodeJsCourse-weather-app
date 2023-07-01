@@ -18,9 +18,10 @@ app.set("view engine", "hbs");
 hbs.registerPartials(partialPath);
 app.use(express.static(publicDirectoryPath)); // order matters
 
-app.get("/help", (req, res) => {
-  res.send("Hello express!");
-}); //all three does not require
+// app.get("/help", (req, res) => {
+//   res.send("Hello express!");
+// });
+//all three does not require
 // app.get("/about", (req, res) => {
 //     res.send("about Page");
 // });
@@ -32,9 +33,6 @@ app.get("", (req, res) => {
   });
 });
 
-app.get("/help", (req, res) => {
-  res.send("hi");
-});
 
 app.get("/about", (req, res) => {
   res.render("about", {
