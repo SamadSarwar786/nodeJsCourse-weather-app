@@ -1,12 +1,12 @@
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
-const { geocode } = require("../utils/geocode");
-const forecast = require("../utils/forecast");
+const { geocode } = require("./utils/geocode");
+const forecast = require("./utils/forecast");
 
-const publicDirectoryPath = path.join(__dirname, "../public");
-const viewsPath = path.join(__dirname, "../templates/views");
-const partialPath = path.join(__dirname, "../templates/partials");
+const publicDirectoryPath = path.join(__dirname, "./public");
+const viewsPath = path.join(__dirname, "./templates/views");
+const partialPath = path.join(__dirname, "./templates/partials");
 
 // console.log(publicDirectoryPath);
 
