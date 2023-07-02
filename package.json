@@ -2,13 +2,13 @@
   "name": "web-server",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "app.js",
   "nodemonConfig": {
     "ext": "js,json,hbs,html"
   },
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
     "postman-request": "^2.88.1-postman.32",
