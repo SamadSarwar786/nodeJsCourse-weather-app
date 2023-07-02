@@ -15,8 +15,7 @@ searchForm.addEventListener("submit", (e) => {
   console.log(searchTerm.value);
   content.textContent = "Loading...";
   const address = searchTerm.value;
-  const Base_URL = "http://localhost:3000/weather";
-  const url = `${Base_URL}?address=${address}`;
+  const url = `/weather?address=${address}`;  // relative path
   fetch(url).then((response) => {
     response.json().then((data) => {
       if (data.error) {

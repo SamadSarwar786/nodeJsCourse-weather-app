@@ -11,7 +11,7 @@ const partialPath = path.join(__dirname, "../templates/partials");
 // console.log(publicDirectoryPath);
 
 const app = express();
-
+const port = process.env.PORT || 3000;
 // setup handlebars  and views location
 app.set("views", viewsPath);
 app.set("view engine", "hbs");
@@ -76,6 +76,6 @@ app.get("*", (req, res) => {
   res.send("My 404 pages");
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server is up on port 3000");
 });
